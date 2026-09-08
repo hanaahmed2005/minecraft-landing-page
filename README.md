@@ -54,7 +54,7 @@ The website includes:
 
 ## Live Demo
 
-[View Live Demo](https://hanaahmed2005.github.io/minecraft-landing-page/)
+[View Live Demo](https://hanaahmed2005.github.io/minecraft-landing-page/minecraft.html)
 
 ## Screenshots
 
