@@ -1932,7 +1932,17 @@ span {
         display: block; 
     } 
  
- 
+ .menu-toggle .close-icon {
+    display: none;
+}
+
+.menu-toggle.active .hamburger {
+    display: none;
+}
+
+.menu-toggle.active .close-icon {
+    display: block;
+}
     /* Mobile Menu - OPEN */ 
  
     .nav-container { 
@@ -1940,43 +1950,41 @@ span {
     } 
  
  
-    .nav-links.mobile-active { 
-        display: flex; 
- 
-        position: absolute; 
- 
-        top: 75px; 
-        left: 0; 
- 
-        width: 100%; 
- 
-        padding: 20px; 
- 
-        flex-direction: column; 
-        align-items: flex-start; 
- 
-        gap: 20px; 
- 
-        background: rgba(4, 10, 5, 0.97); 
- 
-        border: 1px solid rgba(118, 184, 42, 0.25); 
- 
-        backdrop-filter: blur(10px); 
- 
-        z-index: 999; 
-    } 
- 
- 
-    .nav-links.mobile-active a { 
-        display: block; 
- 
-        width: 100%; 
- 
-        padding: 8px 0; 
- 
-        font-size: 11px; 
-    } 
- 
+    .nav-links.mobile-active {
+    display: flex;
+
+    position: absolute;
+
+    top: 70px;
+    right: 0;
+
+    width: 220px;
+
+    padding: 18px 20px;
+
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 12px;
+
+    background: rgba(4, 10, 5, 0.97);
+
+    border: 1px solid rgba(118, 184, 42, 0.25);
+
+    backdrop-filter: blur(10px);
+
+    z-index: 999;
+}
+
+.nav-links.mobile-active a {
+    display: block;
+
+    width: 100%;
+
+    padding: 6px 0;
+
+    font-size: 11px;
+}
  
     .navbar { 
         padding: 20px 0; 
@@ -2247,4 +2255,73 @@ span {
     } 
  
 }
+
+
+
+
+
+/* ===================================================== 
+   MOBILE MENU ICON 
+===================================================== */ 
+ 
+.menu-toggle { 
+    position: relative; 
+    width: 45px; 
+    height: 45px; 
+    padding: 0; 
+    display: none; 
+    align-items: center; 
+    justify-content: center; 
+    background: transparent; 
+    color: #ffffff; 
+    font-size: 28px; 
+    cursor: pointer; 
+    z-index: 1001; 
+} 
+ 
+ 
+.menu-toggle .hamburger-icon, 
+.menu-toggle .close-icon { 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+} 
+ 
+ 
+.menu-toggle .hamburger-icon { 
+    display: block; 
+    font-size: 28px; 
+    line-height: 1; 
+} 
+ 
+ 
+.menu-toggle .close-icon { 
+    display: none; 
+    font-size: 32px; 
+    line-height: 1; 
+} 
+ 
+ 
+.menu-toggle.active .hamburger-icon { 
+    display: none; 
+} 
+ 
+ 
+.menu-toggle.active .close-icon { 
+    display: block; 
+} 
+ 
+ 
+/* ===================================================== 
+   MOBILE MENU ICON - SHOW ON MOBILE 
+===================================================== */ 
+ 
+@media (max-width: 700px) { 
+ 
+    .menu-toggle { 
+        display: flex; 
+    } 
+ 
+} 
 
