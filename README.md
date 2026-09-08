@@ -54,11 +54,21 @@ The website includes:
 
 ## Live Demo
 
-Coming soon.
+[View Live Demo](https://hanaahmed2005.github.io/minecraft-landing-page/)
 
 ## Screenshots
 
-Screenshots will be added here.
+### Desktop
+![Desktop Screenshot](desktop.png)
+
+### Tablet
+![Tablet Screenshot](tablet.png)
+
+### Mobile
+![Mobile Screenshot](mobile.png)
+
+### Mobile Menu
+![Mobile Menu Screenshot](mobile-menu.png)
 
 ## Author
 
